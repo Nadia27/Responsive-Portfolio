@@ -227,80 +227,93 @@ input[type=submit] {
 
 
 @media screen and (max-width: 980px) {
-    body {
-    	width: 100%
-    }
+   
+.container {
+	padding: 0 20px; 
+	max-width: 768px;
+}
 
+.main-container {
+	padding-top: 130%;
+}
+
+.main-section {
+	max-width: 470px; 
+}
+
+ .work {
+ 	width: 100%; 
+ }
+
+ .auth-image {
+ 	width: 100%; 
+ 	margin-bottom: 20px; 
+ }
+
+
+  
 } 
 
 @media screen and (max-width: 768px) {
-	
-	.container {
-	width: 100%;
-	max-width: 600px;
+	.main-section, .sidebar {
+		max-width: 100%; 
+		}
 
-	}
-
-	#masthead{
-		margin: 0 0 15px;
-		padding: 5px; 
+	.main-container {
+		overflow: none; 
 	}
 
 	.sidebar {
-		float: none;
-		margin: 10px auto;
-		max-width: 600px; 
-	}
-
-	.main-section {
-		float: none;
-		margin: 0 auto;
-		max-width: 768px;
+		margin-bottom: 40px; 
 	}
 
 	.work {
-		width: 50%;
-
+		width: 47%;
 	}
-
-	.work img {
-		max-width: 60%;
-		max-height: 60%; 
-		margin-right: 0px;
-		
-
-
-	}
-
 	.work:nth-child(even) {
-		margin-right: auto;
+		margin-right: 0; 
 	}
 
-	.work h3 {
-		max-width: 60%;
-		line-height: 15px;
-		bottom: 70px;
-		position: relative;
-		left: 14px;
+	.work:nth-child(odd) {
+		float: right;
 	}
 
-
-
-
-
-	.auth-image{
-		width: 48%;
-		margin: 5%;
-		float: left;
-		 
+	.auth-image {
+		width: 50%; 
 	}
-
-
-
-		 
-	}
-
+}
+	
 
 @media screen and (max-width: 640px) {
+	#masthead {
+		position: static;
+	}
+	
+	header .container {
+		padding: 0; 
+	}
 
-}
+	#main-container {
+		padding-top: 0;
+	}
+
+	#logo, .work, .auth-image {
+		width: 100%;
+	}
+
+	nav {
+		text-align: center;
+		width: 100%; 
+		margin: 15px 0;
+	}
+
+	nav a {
+		width: 30%; 
+		padding-left: 0; 
+	}
+	}
+
+
+
+
+	}
